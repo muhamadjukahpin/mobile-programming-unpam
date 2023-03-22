@@ -16,16 +16,13 @@ public class MainActivity extends AppCompatActivity {
     EditText email;
     EditText password;
     String sEmail, sPassword;
-    Boolean logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        logout = getIntent().getExtras().getBoolean("logout");
-
-        if (logout) {
+        if (getIntent().getBooleanExtra("logout", false)) {
             Toast toast = Toast.makeText(getApplicationContext(), "Anda berhasil keluar.", Toast.LENGTH_LONG);
             toast.setGravity(Gravity.TOP, 0, 500);
             toast.show();

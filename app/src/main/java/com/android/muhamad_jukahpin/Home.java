@@ -18,7 +18,7 @@ public class Home extends AppCompatActivity {
     TextView textPassword;
     String sEmail;
     String sPassword;
-    Button btnLogout;
+    Button btnLogout, btnListFruit;
     Boolean login;
 
     @SuppressLint("SetTextI18n")
@@ -43,6 +43,19 @@ public class Home extends AppCompatActivity {
 
         textEmail.setText("Email : " + sEmail);
         textPassword.setText("Password : " + sPassword);
+
+        // List Fruit
+        btnListFruit = findViewById(R.id.btnListFruit);
+
+        btnListFruit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Home.this, ListFruit.class);
+
+                startActivity(i);
+                finish();
+            }
+        });
 
         // Logout
         btnLogout = findViewById(R.id.logout);

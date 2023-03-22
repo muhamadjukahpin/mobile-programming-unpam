@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".CustomListViewFruit"
+            android:exported="false" />
+        <activity
+            android:name=".ListFruit"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false" />
         <activity android:name=".MainActivity">

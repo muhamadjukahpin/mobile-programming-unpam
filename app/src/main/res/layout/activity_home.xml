@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:gravity="top"
         android:orientation="vertical">
 
         <TextView
@@ -36,10 +36,19 @@
             android:textSize="20dp" />
 
         <Button
+            android:id="@+id/btnListFruit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#048730"
+            android:fontFamily="sans-serif-medium"
+            android:text="Daftar buah"
+            android:textColor="@color/design_default_color_background" />
+
+        <Button
             android:id="@+id/logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#5056F4"
+            android:backgroundTint="#094ED6"
             android:fontFamily="sans-serif-medium"
             android:text="Keluar"
             android:textColor="@color/design_default_color_background" />
