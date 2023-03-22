@@ -16,10 +16,10 @@
             android:id="@+id/welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="50dp"
-            android:textStyle="bold"
             android:gravity="center"
-            android:text="Selamat Datang" />
+            android:text="Selamat Datang"
+            android:textSize="50dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textEmail"
@@ -34,6 +34,15 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5056F4"
+            android:fontFamily="sans-serif-medium"
+            android:text="Keluar"
+            android:textColor="@color/design_default_color_background" />
 
 
     </LinearLayout>
